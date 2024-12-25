@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-color: #042B30;
+    color: white;
+}
+
+.slider {
+    height: 100%;
+}
+
+.slider__layer {
+    position: absolute;
+    inset: 0; /* устанавливает отступы если 0 то блок будет занимать всю высоту и ширину родительского элемента */
+    background-size: cover;
+    background-position: center;
+    will-change: transform;  /* указывает, что этому блоку с свойством transform стоит уделить больше ресурсов */
+}
+
+.slider__item {
+    overflow: hidden; /* чтобы слои не наезжали друг на друга */
+    transform: scale(1.25) !important; /* для переопределения технических стилей */
+    transition: 2200ms ease !important;
+}
+
+
+.slider__item:not(.swiper-slide-active) {
+    transform: scale(1) !important; /* для переопределения технических стилей */
+}
+
+.slider-ui {
+    position: absolute;
+    inset: 0;
+    z-index: 99;
+} /* контейнер поверх слайдера занимает 100% высоты и ширины*/
+
+
+

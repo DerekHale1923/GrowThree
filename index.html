@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GrowTree</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/grid.css">
+    <link rel="stylesheet" href="/css/vars.css">
+    <!-- библиотека swiper -->
+    <link rel="stylesheet" href="/libs/swiper/swiper-bundle.min.css">
+    <script src="/libs/swiper/swiper-bundle.min.js" defer></script>
+    <!---->
+    <script src="/js/app.js" defer></script>
+</head>
+<body>
+
+<div class="swiper slider"> <!-- технические контейнеры  swiper -->
+    <div class="slider-ui">
+        <div class="container">
+            <div class="top-line">
+                <div class="row">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-wrapper"><!-- технические контейнеры swiper-wrapper -->
+        <div class="swiper-slide slider__item">  <!-- технические контейнеры swiper-slide -->
+            <div class="slider__layer" data-swiper-parallax="35%"
+                 style="background-image: url('img/slides/slide-1-layer-back.jpg')"></div>
+            <div class="slider__layer" data-swiper-parallax="25%"
+                 style="background-image: url('img/slides/slide-1-layer-middle.png')"></div>
+            <div class="slider__layer" data-swiper-parallax="15%"
+                 style="background-image: url('img/slides/slide-1-layer-front.png')"></div>
+        </div>
+        <!-- data-swiper-parallax атрибут задает параллакс -->
+
+        <div class="swiper-slide slider__item">
+            <div class="slider__layer" data-swiper-parallax="35%"
+                 style="background-image: url('img/slides/slide-2-layer-back.jpg')"></div>
+            <div class="slider__layer" data-swiper-parallax="25%"
+                 style="background-image: url('img/slides/slide-2-layer-middle.png')"></div>
+            <div class="slider__layer" data-swiper-parallax="15%"
+                 style="background-image: url('img/slides/slide-2-layer-front.png')"></div>
+        </div>
+
+        <div class="swiper-slide slider__item">
+            <div class="slider__layer" data-swiper-parallax="35%"
+                 style="background-image: url('img/slides/slide-3-layer-back.jpg')"></div>
+            <div class="slider__layer" data-swiper-parallax="25%"
+                 style="background-image: url('img/slides/slide-3-layer-middle.png')"></div>
+            <div class="slider__layer" data-swiper-parallax="15%"
+                 style="background-image: url('img/slides/slide-3-layer-front.png')"></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
